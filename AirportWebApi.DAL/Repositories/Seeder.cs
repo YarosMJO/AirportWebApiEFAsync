@@ -1,4 +1,4 @@
-﻿using AirportWebApi.DAL.Models;
+using AirportWebApi.DAL.Models;
 using System;
 using System.Collections.Generic;
 
@@ -41,18 +41,18 @@ namespace Repositories.Seeder
 
         public readonly List<Plane> Planes = new List<Plane>()
           {
-              new Plane(){ Name="K547",Type = new PlaneType(){ Carrying = 100, LifeTime = TimeSpan.FromTicks(14000000),Model="Model1",SeatsCapacity = 111},LifeTime = TimeSpan.FromTicks(14000000),ReleaseDate = now},
-              new Plane(){ Name="Boing",Type = new PlaneType(){Carrying = 170, LifeTime = TimeSpan.FromTicks(14000000),Model="Model2",SeatsCapacity = 108 },LifeTime = TimeSpan.FromTicks(14000000),ReleaseDate = now},
-              new Plane(){Name="L9",Type = new PlaneType(){ Carrying = 180, LifeTime = TimeSpan.FromTicks(14000000),Model="Model3",SeatsCapacity = 154},LifeTime = TimeSpan.FromTicks(14000000),ReleaseDate = now},
-              new Plane(){ Name="Mustang",Type = new PlaneType(){ Carrying = 120, LifeTime = TimeSpan.FromTicks(14000000),Model="Model4",SeatsCapacity = 117},LifeTime = TimeSpan.FromTicks(14000000),ReleaseDate = now},
-              new Plane(){ Name="Mria",Type = new PlaneType(){ Carrying = 170, LifeTime = TimeSpan.FromTicks(14000000),Model="Model5",SeatsCapacity = 124},LifeTime = TimeSpan.FromTicks(14000000),ReleaseDate = now}
+              new Plane(){ Name="K547",Type = new PlaneType(){ Carrying = 100, LifeTime = TimeSpan.FromTicks(14000000),Model="L45",SeatsCapacity = 111},LifeTime = TimeSpan.FromTicks(14000000),ReleaseDate = now},
+              new Plane(){ Name="Boing",Type = new PlaneType(){Carrying = 170, LifeTime = TimeSpan.FromTicks(14000000),Model="K785",SeatsCapacity = 108 },LifeTime = TimeSpan.FromTicks(14000000),ReleaseDate = now},
+              new Plane(){Name="L9",Type = new PlaneType(){ Carrying = 180, LifeTime = TimeSpan.FromTicks(14000000),Model="Bordo",SeatsCapacity = 154},LifeTime = TimeSpan.FromTicks(14000000),ReleaseDate = now},
+              new Plane(){ Name="Mustang",Type = new PlaneType(){ Carrying = 120, LifeTime = TimeSpan.FromTicks(14000000),Model="Kewle",SeatsCapacity = 117},LifeTime = TimeSpan.FromTicks(14000000),ReleaseDate = now},
+              new Plane(){ Name="Mria",Type = new PlaneType(){ Carrying = 170, LifeTime = TimeSpan.FromTicks(14000000),Model="J74",SeatsCapacity = 124},LifeTime = TimeSpan.FromTicks(14000000),ReleaseDate = now}
           };
 
         public readonly List<PlaneType> PlaneTypes = new List<PlaneType>()
           {
-              new PlaneType(){Carrying = 100, LifeTime = TimeSpan.FromTicks(14000000),Model="Model1",SeatsCapacity = 114},
-              new PlaneType(){Carrying = 95, LifeTime = TimeSpan.FromTicks(14000000),Model="Model2",SeatsCapacity = 100},
-              new PlaneType(){Carrying = 87, LifeTime = TimeSpan.FromTicks(14000000),Model="Model3",SeatsCapacity = 80},
+              new PlaneType(){Carrying = 100, LifeTime = TimeSpan.FromTicks(14000000),Model="L47",SeatsCapacity = 114},
+              new PlaneType(){Carrying = 95, LifeTime = TimeSpan.FromTicks(14000000),Model="Bordo",SeatsCapacity = 100},
+              new PlaneType(){Carrying = 87, LifeTime = TimeSpan.FromTicks(14000000),Model="Klewe",SeatsCapacity = 80},
 
           };
         public readonly List<Flight> Flights = new List<Flight>()
@@ -102,19 +102,19 @@ namespace Repositories.Seeder
           {
               new Departure(){Crew=new Crew(){ Pilot=new Pilot(){Name="Alessio", Surname="Rossi",Birthday=new DateTime(1404, 6, 21),Experience=3},FlightAttendants = new List<FlightAttendant>(){new FlightAttendant(){ Name="Maria", Surname="Johnson",Birthday=new DateTime(1404, 6, 21)},
                   new FlightAttendant(){ Name="Kate", Surname="	Williams",Birthday=new DateTime(1414, 3, 17)},
-                  new FlightAttendant(){ Name="Mila", Surname="Jones",Birthday=new DateTime(1406, 1, 14)}}},DepartureDate= now,FlightNumber=1,Plane= new Plane(){ Name="Ан-1",Type = new PlaneType(){ Carrying = 100, LifeTime = TimeSpan.FromTicks(14000000),Model="Model1",SeatsCapacity = 114},LifeTime = TimeSpan.FromTicks(14000000),ReleaseDate = now} },
+                  new FlightAttendant(){ Name="Mila", Surname="Jones",Birthday=new DateTime(1406, 1, 14)}}},DepartureDate= now,FlightNumber=1,Plane= new Plane(){ Name="Boing-747",Type = new PlaneType(){ Carrying = 100, LifeTime = TimeSpan.FromTicks(14000000),Model="Model1",SeatsCapacity = 114},LifeTime = TimeSpan.FromTicks(14000000),ReleaseDate = now} },
               new Departure(){Crew=new Crew(){ Pilot=new Pilot(){ Name="Gennaro", Surname="Calabresi",Birthday=new DateTime(1414, 3, 17),Experience=4},FlightAttendants = new List<FlightAttendant>(){new FlightAttendant(){ Name="Maria", Surname="Johnson",Birthday=new DateTime(1404, 6, 21)},
                   new FlightAttendant(){ Name="Kate", Surname="	Williams",Birthday=new DateTime(1414, 3, 17)},
-                  new FlightAttendant(){ Name="Mila", Surname="Jones",Birthday=new DateTime(1406, 1, 14)}}},DepartureDate= now,FlightNumber=1,Plane=new Plane(){ Name="Ан-1",Type = new PlaneType(){ Carrying = 100, LifeTime = TimeSpan.FromTicks(14000000),Model="Model1",SeatsCapacity = 114},LifeTime = TimeSpan.FromTicks(14000000),ReleaseDate = now}},
+                  new FlightAttendant(){ Name="Mila", Surname="Jones",Birthday=new DateTime(1406, 1, 14)}}},DepartureDate= now,FlightNumber=2,Plane=new Plane(){ Name="Boing-747",Type = new PlaneType(){ Carrying = 100, LifeTime = TimeSpan.FromTicks(14000000),Model="Model1",SeatsCapacity = 114},LifeTime = TimeSpan.FromTicks(14000000),ReleaseDate = now}},
               new Departure(){Crew=new Crew(){ Pilot=new Pilot(){ Name="Adelaide", Surname="Giordano",Birthday=new DateTime(1998, 8, 14),Experience=2},FlightAttendants = new List<FlightAttendant>(){new FlightAttendant(){ Name="Maria", Surname="Johnson",Birthday=new DateTime(1404, 6, 21)},
                   new FlightAttendant(){ Name="Kate", Surname="	Williams",Birthday=new DateTime(1414, 3, 17)},
-                  new FlightAttendant(){ Name="Mila", Surname="Jones",Birthday=new DateTime(1406, 1, 14)}}},DepartureDate= now,FlightNumber=1,Plane=new Plane(){ Name="Ан-1",Type = new PlaneType(){ Carrying = 100, LifeTime = TimeSpan.FromTicks(14000000),Model="Model1",SeatsCapacity = 114},LifeTime = TimeSpan.FromTicks(14000000),ReleaseDate = now}},
+                  new FlightAttendant(){ Name="Mila", Surname="Jones",Birthday=new DateTime(1406, 1, 14)}}},DepartureDate= now,FlightNumber=2,Plane=new Plane(){ Name="Mustang",Type = new PlaneType(){ Carrying = 100, LifeTime = TimeSpan.FromTicks(14000000),Model="Model1",SeatsCapacity = 114},LifeTime = TimeSpan.FromTicks(14000000),ReleaseDate = now}},
               new Departure(){Crew=new Crew(){Pilot=new Pilot(){ Name="Gennaro", Surname="Calabresi",Birthday=new DateTime(1414, 3, 17),Experience=4},FlightAttendants = new List<FlightAttendant>(){new FlightAttendant(){ Name="Maria", Surname="Johnson",Birthday=new DateTime(1404, 6, 21)},
                   new FlightAttendant(){ Name="Kate", Surname="	Williams",Birthday=new DateTime(1414, 3, 17)},
-                  new FlightAttendant(){ Name="Mila", Surname="Jones",Birthday=new DateTime(1406, 1, 14)}} },DepartureDate= now,FlightNumber=1,Plane=new Plane(){ Name="Ан-1",Type = new PlaneType(){ Carrying = 100, LifeTime = TimeSpan.FromTicks(14000000),Model="Model1",SeatsCapacity = 114},LifeTime = TimeSpan.FromTicks(14000000),ReleaseDate = now}},
+                  new FlightAttendant(){ Name="Mila", Surname="Jones",Birthday=new DateTime(1406, 1, 14)}} },DepartureDate= now,FlightNumber=1,Plane=new Plane(){ Name="Mria",Type = new PlaneType(){ Carrying = 100, LifeTime = TimeSpan.FromTicks(14000000),Model="Model1",SeatsCapacity = 114},LifeTime = TimeSpan.FromTicks(14000000),ReleaseDate = now}},
               new Departure(){Crew=new Crew(){ Pilot=new Pilot(){Name="Alessio", Surname="Rossi",Birthday=new DateTime(1404, 6, 21),Experience=3},FlightAttendants = new List<FlightAttendant>(){new FlightAttendant(){ Name="Maria", Surname="Johnson",Birthday=new DateTime(1404, 6, 21)},
                   new FlightAttendant(){ Name="Kate", Surname="	Williams",Birthday=new DateTime(1414, 3, 17)},
-                  new FlightAttendant(){ Name="Mila", Surname="Jones",Birthday=new DateTime(1406, 1, 14)}}},DepartureDate= now,FlightNumber=1,Plane=new Plane(){ Name="Ан-1",Type = new PlaneType(){ Carrying = 100, LifeTime = TimeSpan.FromTicks(14000000),Model="Model1",SeatsCapacity = 114},LifeTime = TimeSpan.FromTicks(14000000),ReleaseDate = now}}
+                  new FlightAttendant(){ Name="Mila", Surname="Jones",Birthday=new DateTime(1406, 1, 14)}}},DepartureDate= now,FlightNumber=3,Plane=new Plane(){ Name="K-457",Type = new PlaneType(){ Carrying = 100, LifeTime = TimeSpan.FromTicks(14000000),Model="Model1",SeatsCapacity = 114},LifeTime = TimeSpan.FromTicks(14000000),ReleaseDate = now}}
           };
 
     }
